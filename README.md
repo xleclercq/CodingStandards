@@ -1,3 +1,3 @@
 # Coding Standards
 
-This repository contains coding standards used for the [CodeSmithyIDE organization](https://github.com/CodeSmithyIDE).
+This repository contains coding standards used by the projects in the [CodeSmithyIDE organization](https://github.com/CodeSmithyIDE).
