@@ -19,7 +19,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 1. Source files shall have a ".cpp" extension.
 
-1. Filenames shall use upper camel case with the following modification:
+1. Filenames shall use UpperCamelCase with the following modification:
 
 1. Namespaces, class names and function names can be included in the file name and be separated from each other and other parts
    of the file with an underscore.
@@ -46,17 +46,27 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ## Naming conventions
 
-9. Class names shall use upper camel case.
+9. Namespaces shall use UpperCamelCase.
+
+    Examples:
+    *Pets*, *FourLeggedAnimals*
+
+9. Class names shall use UpperCamelCase.
 
     Examples:\
     *TheDog*, *ADog*, *Dog*
 
-9. Method names shall use lower camel case.
+9. Method names shall use lowerCamelCase.
 
     Examples:\
     *barks()*, *playsFetch()*
 
-9. Member variables shall start with "m_" and user lower camel case.
+9. Member variable names shall start with "m_" and user lowerCamelCase.
 
     Examples:\
     *m_name*, *m_bestFriend*
+
+9. Macro names shall use SCREAMING_SNAKE_CASE.
+
+    Examples:
+    *DOG*, *THE_CUTE_DOG*
