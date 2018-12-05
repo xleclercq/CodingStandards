@@ -71,10 +71,10 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     Examples:\
     *DOG*, *THE_CUTE_DOG*
 
-9. Header guards shall start and end with an underscore. They shall be formed by:
-    1. taking the path of the header file, converting it to upper case and replacing the path separator with the underscore character,
-    1. then prefixing the result of the previous step with the name of the project in upper case followed by an uderscore,
-    1. and finnally adding a leading and a trailing underscore to the result of the previous step.
+9. Header guard names shall be formed by:
+    1. taking the path of the header file, converting it to upper case and replacing the path separators with underscores,
+    1. then prefixing the result of the previous step with the name of the project in upper case followed by an underscore,
+    1. and finally adding a leading and a trailing underscore to the result of the previous step.
 
     Examples:\
     For a header file in a project called *TheProject* that has the path *Dir1/SubDir2/HeaderFile.h*, the header guard shall be named
