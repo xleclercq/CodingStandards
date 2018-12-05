@@ -94,10 +94,20 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     Examples:\
     *TheDog*, *ADog*, *Dog*
 
-1. Method names shall use lowerCamelCase.
+1. Non-static method names shall use lowerCamelCase.
 
     Examples:\
     *barks()*, *playsFetch()*
+
+1. Static method names shall use UpperCamelCase.
+
+    Examples:\
+    *StaticBarks()*, *StaticPlaysFetch()*
+
+1. Functions that are not part of a class shall use UpperCamelCase.
+
+    Examples:\
+    *Function()*, *MyFunction()*
 
 1. Member variable names shall start with "m_" and user lowerCamelCase.
 
