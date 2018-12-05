@@ -55,3 +55,8 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     Examples:\
     *barks()*, *playsFetch()*
+
+9. Member variables shall start with "m_" and user lower camel case.
+
+    Examples:\
+    *m_name*, *m_bestFriend*
