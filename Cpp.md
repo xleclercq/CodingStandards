@@ -84,7 +84,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ## Naming conventions
 
-12. Namespaces shall use UpperCamelCase.
+12. Namespace names shall use UpperCamelCase.
 
     Examples:\
     *Pets*, *FourLeggedAnimals*
@@ -104,7 +104,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     Examples:\
     *StaticBarks()*, *StaticPlaysFetch()*
 
-1. Functions that are not part of a class shall use UpperCamelCase.
+1. The names of functions that are not part of a class shall use UpperCamelCase.
 
     Examples:\
     *Function()*, *MyFunction()*
