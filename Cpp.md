@@ -13,4 +13,5 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 1. Header files will have a ".h" extension.
 1. Source files will have a ".cpp" extension.
 1. Filenames will use camel case with the following modification:
-1. Namespaces can be included in the file name and separated from the rest of the file name with an underscore.
+1. Namespaces, class names and function names can be included in the file name and be separated from each other and other parts of the file with an underscore.
+    Example: if a namespace TheNameSpace contains a class called TheClass, the file name would be TheNameSpace_TheClass.
