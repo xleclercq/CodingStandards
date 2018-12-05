@@ -44,9 +44,28 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     > We link the name of the source file to the name of the header file so that if a case arises where the name of the header file
     > does not follow the rule then at least the header file and source file have the same name.
 
+## Indentation style
+
+9. Indentation shall use 4 spaces and not tabs.
+
+    > We had to choose one or the other.
+
+9. Curly braces shall use the Allman style.
+
+     Example:\
+     ```
+     void Function(bool condition)
+     {
+         if (condition)
+         {
+             DoSomething();
+         }   
+     }
+     ```
+
 ## Naming conventions
 
-9. Namespaces shall use UpperCamelCase.
+11. Namespaces shall use UpperCamelCase.
 
     Examples:\
     *Pets*, *FourLeggedAnimals*
