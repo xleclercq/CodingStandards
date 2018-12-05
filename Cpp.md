@@ -14,12 +14,25 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 1. The newline character will be:
     1. "\r\n" on Microsoft Windows platforms.
     1. "\n" on Unix platforms.
+
 1. Header files will have a ".h" extension.
+
 1. Source files will have a ".cpp" extension.
+
 1. Filenames will use camel case with the following modification:
+
 1. Namespaces, class names and function names can be included in the file name and be separated from each other and other parts
    of the file with an underscore.
 
     Example:
 
-    If a namespace TheNameSpace contains a class called TheClass, the file name would be: *TheNameSpace_TheClass*.
+    If a namespace *TheNameSpace* contains a class called *TheClass*, the file name would be: *TheNameSpace_TheClass*.
+
+    > This rule is for files that do not contain source code as the following rules describe stricter naming conventions for files
+    > that contain source code.
+
+1. A header file that contains the declaration of a class shall have the same name as the class.
+
+    Example:
+
+    If the file contains the declaration for the class *TheClass*, the file shall be named *TheClass.h*.
