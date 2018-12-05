@@ -43,3 +43,10 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     > We link the name of the source file to the name of the header file so that if a case arises where the name of the header file
     > does not follow the rule then at least the header file and source file have the same name.
+
+## Naming conventions
+
+1. Class names will use camel case.
+
+    Examples:\
+        *TheDog*, *ADog*, *Dog*
