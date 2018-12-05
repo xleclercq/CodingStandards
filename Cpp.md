@@ -8,5 +8,9 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 1. Lines will be no more than 120 characters in length excluding the new line character(s).
 1. The newline character will be:
-    1. \r\n on Microsoft Windows platforms.
-    1. \n on Unix platforms.
+    1. "\r\n" on Microsoft Windows platforms.
+    1. "\n" on Unix platforms.
+1. Header files will have a ".h" extension.
+1. Source files will have a ".cpp" extension.
+1. Filenames will use camel case with the following modification:
+1. Namespaces can be included in the file name and separated from the rest of the file name with an underscore.
