@@ -46,7 +46,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ## Naming conventions
 
-1. Class names will use camel case.
+2. Class names will use camel case.
 
     Examples:\
-        *TheDog*, *ADog*, *Dog*
+    *TheDog*, *ADog*, *Dog*
