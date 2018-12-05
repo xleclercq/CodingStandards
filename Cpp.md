@@ -50,7 +50,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     > We had to choose one or the other.
 
-9. Curly braces shall use the Allman style.
+1. Curly braces shall use the Allman style.
 
      Example:
      ```
@@ -65,34 +65,51 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     > We consider this style to be the most readable and it is common in C++ code.
 
+1. Curly braces shall not be omitted when they contain a single statement.
+
+    Example:
+    ```
+    if (condition)
+    {
+        DoSomething();
+    }
+    ```
+    and not
+    ```
+    if (condition)
+        DoSomething()
+    ```
+
+    > Omitting the braces leads to subtle errors and breaks consistency.
+
 ## Naming conventions
 
-11. Namespaces shall use UpperCamelCase.
+12. Namespaces shall use UpperCamelCase.
 
     Examples:\
     *Pets*, *FourLeggedAnimals*
 
-9. Class names shall use UpperCamelCase.
+1. Class names shall use UpperCamelCase.
 
     Examples:\
     *TheDog*, *ADog*, *Dog*
 
-9. Method names shall use lowerCamelCase.
+1. Method names shall use lowerCamelCase.
 
     Examples:\
     *barks()*, *playsFetch()*
 
-9. Member variable names shall start with "m_" and user lowerCamelCase.
+1. Member variable names shall start with "m_" and user lowerCamelCase.
 
     Examples:\
     *m_name*, *m_bestFriend*
 
-9. Macro names shall use SCREAMING_SNAKE_CASE.
+1. Macro names shall use SCREAMING_SNAKE_CASE.
 
     Examples:\
     *DOG*, *THE_CUTE_DOG*
 
-9. Header guard names shall be formed by:
+1. Header guard names shall be formed by:
     1. taking the path of the header file, converting it to upper case and replacing the path separators with underscores,
     1. then prefixing the result of the previous step with the name of the project in upper case followed by an underscore,
     1. and finally adding a leading and a trailing underscore to the result of the previous step.
