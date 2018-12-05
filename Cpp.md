@@ -52,7 +52,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 9. Curly braces shall use the Allman style.
 
-     Example:\
+     Example:
      ```
      void Function(bool condition)
      {
