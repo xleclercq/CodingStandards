@@ -14,4 +14,5 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 1. Source files will have a ".cpp" extension.
 1. Filenames will use camel case with the following modification:
 1. Namespaces, class names and function names can be included in the file name and be separated from each other and other parts of the file with an underscore.
-    Example: if a namespace TheNameSpace contains a class called TheClass, the file name would be TheNameSpace_TheClass.
+
+    Example: if a namespace TheNameSpace contains a class called TheClass, the file name would be *TheNameSpace_TheClass*.
