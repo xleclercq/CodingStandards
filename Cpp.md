@@ -75,5 +75,5 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
    of the directories and the file name together.
 
     Examples:\
-    For a header file in a project called *TheProject* that has the path *Dir1/SubDir2/HeaderFile.h*, the header guards should be named
-    *_THEPROJECT_DIR1_SUBDIR2_HEADERFILE_H_*. Note that 
+    For a header file in a project called *TheProject* that has the path *Dir1/SubDir2/HeaderFile.h*, the header guard shall be named
+    *\_THEPROJECT_DIR1_SUBDIR2_HEADERFILE_H\_*. Note that 
