@@ -36,3 +36,13 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     Example:
 
     If the file contains the declaration for the class *TheClass*, the file shall be named *TheClass.h*.
+
+1. A source file that contains the definition of a class shall have the same name as the header file for that class.
+
+    Example:
+
+    If the file contains the definition for the class *TheClass*, and assuming that the header file has been named *TheClass.h* as
+    per the previous rule, the name of the file shall be *TheClass.cpp*.
+
+    > We link the name of the source file to the name of the header file so that if a case arises where the name of the header file
+    > does not follow the rule then at least the header file and source file have the same name.
