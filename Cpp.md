@@ -63,6 +63,8 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
      }
      ```
 
+    > We consider this style to be the most readable and it is common in C++ code.
+
 ## Naming conventions
 
 11. Namespaces shall use UpperCamelCase.
