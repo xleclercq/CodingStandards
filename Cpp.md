@@ -24,9 +24,11 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 1. Namespaces, class names and function names can be included in the file name and be separated from each other and other parts
    of the file with an underscore.
 
+    ```
     Example:
 
     If a namespace *TheNameSpace* contains a class called *TheClass*, the file name would be: *TheNameSpace_TheClass*.
+    ```
 
     > This rule is for files that do not contain source code as the following rules describe stricter naming conventions for files
     > that contain source code.
