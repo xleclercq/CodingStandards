@@ -127,3 +127,14 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     Examples:\
     For a header file in a project called *TheProject* that has the path *Dir1/SubDir2/HeaderFile.h*, the header guard shall be named
     *\_THEPROJECT_DIR1_SUBDIR2_HEADERFILE_H\_*. Note that we do not write *SUB_DIR2* but *SUBDIR2*.
+
+## Coding style
+
+### Classes
+
+20. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
+    explicitly by the programmer) shall not be explicitly provided when the version provided by the compiler is adequate.
+
+     > Explicitly defining special functions introduces more opportunities for mistakes since for instance adding a member variable
+     > would mean that all the functions potentially need to be updated. Mandating the opposite (explicitly providing all the 
+     > special functions) would also be a burden on the developer.
