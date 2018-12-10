@@ -19,6 +19,8 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 1. Source files shall have a ".cpp" extension.
 
+1. The main function shall be put in a file called "main.cpp".
+
 1. Filenames shall use UpperCamelCase with the following modification:
 
 1. Namespaces, class names and function names can be included in the file name and be separated from each other and other parts
@@ -29,8 +31,6 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     > This rule is for files that do not contain source code as the following rules describe stricter naming conventions for files
     > that contain source code.
-
-1. The main function shall be put in a file called "main.cpp".
 
 1. A header file that contains the declaration of a class shall have the same name as the class.
 
