@@ -30,6 +30,8 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     > This rule is for files that do not contain source code as the following rules describe stricter naming conventions for files
     > that contain source code.
 
+1. The main function shall be put in a file called "main.cpp".
+
 1. A header file that contains the declaration of a class shall have the same name as the class.
 
     Example:\
@@ -46,7 +48,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ## Indentation style
 
-9. Indentation shall use 4 spaces and not tabs.
+10. Indentation shall use 4 spaces and not tabs.
 
     > We had to choose one or the other.
 
@@ -84,7 +86,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ## Naming conventions
 
-12. Namespace names shall use UpperCamelCase.
+13. Namespace names shall use UpperCamelCase.
 
     Examples:\
     *Pets*, *FourLeggedAnimals*
@@ -132,7 +134,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ### Classes
 
-20. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
+21. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
     explicitly by the programmer) shall not be explicitly provided when the version provided by the compiler is adequate.
 
      > Explicitly defining special functions introduces more opportunities for mistakes since for instance adding a member variable
