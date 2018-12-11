@@ -154,4 +154,5 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 23. If a special member function has to be explicitly declared but its definition is equivalent to the code that would be generated
     by the compiler then the "= default" keyword shall be used.
 
-    > A typical example would be when the default constructor is suppressed because the user provided a non-default constructor.
+    > A typical example would be when the generation of the default constructor is suppressed because a non-default constructor was
+    > declared.
