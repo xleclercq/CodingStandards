@@ -138,11 +138,20 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ## Coding style
 
+### General
+
+22. The code shall comply with the C++ 11 standard.
+
 ### Classes
 
-22. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
-    explicitly by the programmer) shall not be explicitly provided when the version provided by the compiler is adequate.
+23. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
+    explicitly by the programmer) shall not be explicitly declared when the version provided by the compiler is adequate.
 
-     > Explicitly defining special functions introduces more opportunities for mistakes since for instance adding a member variable
-     > would mean that all the functions potentially need to be updated. Mandating the opposite (explicitly providing all the 
-     > special functions) would also be a burden on the developer.
+     > Explicitly declaring and defining special functions introduces more opportunities for mistakes since for instance adding
+     > a member variable would mean that all the functions potentially need to be updated. Mandating the opposite (explicitly 
+     > providing all the special functions) would also be a burden on the developer.
+
+23. If a special member function has to be explicitly declared but its definition is equivalent to the code that would be generated
+    by the compiler then the "= default" keyword shall be used.
+
+    > A typical example would be when the default constructor is suppressed because the user provided a non-default constructor.
