@@ -46,9 +46,15 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     > We link the name of the source file to the name of the header file so that if a case arises where the name of the header file
     > does not follow the rule then at least the header file and source file have the same name.
 
+## Makefiles
+
+10. For Microsoft Windows, projects should provide:
+    1. 32-bit and 64-bit configurations
+    1. Debug and Release configurations
+
 ## Indentation style
 
-10. Indentation shall use 4 spaces and not tabs.
+11. Indentation shall use 4 spaces and not tabs.
 
     > We had to choose one or the other.
 
@@ -86,7 +92,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ## Naming conventions
 
-13. Namespace names shall use UpperCamelCase.
+14. Namespace names shall use UpperCamelCase.
 
     Examples:\
     *Pets*, *FourLeggedAnimals*
@@ -134,7 +140,7 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ### Classes
 
-21. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
+22. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
     explicitly by the programmer) shall not be explicitly provided when the version provided by the compiler is adequate.
 
      > Explicitly defining special functions introduces more opportunities for mistakes since for instance adding a member variable
