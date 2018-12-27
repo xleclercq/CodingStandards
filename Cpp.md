@@ -113,7 +113,22 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     > Omitting the braces leads to subtle errors and breaks consistency.
 
-1. 
+1. Arguments shall be put on the same line as the function name. If the line length limit set in rule (1) is exceeded, then
+   the arguments shall continue on the next line. Arguments shall be put on as few lines as possible. The rule applies
+   to function declarations, function definitions and function calls.
+
+    > It is common to put each argument on a separate line but this can lead to a lot of lines being inserted unnecessarily.
+    > Therefore this standard takes the opposite approach because we believe the gains in readability from putting each argument
+    > on a separate line are minimal.
+
+    Example:
+    ```
+    void Function1(int a, int b);
+    void Namespace1::Class1::Function2(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8,
+        int arg9)
+
+    Function1(a, b)
+    ```
 
 ## Naming conventions
 
