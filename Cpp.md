@@ -156,3 +156,14 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     > A typical example would be when the generation of the default constructor is suppressed because a non-default constructor was
     > declared.
+
+## Third party code
+
+25. Third party code shall not be modified to comply with these coding conventions.
+
+     > If foreign code needs to be copied in the project it should be copied as-is as much as possible. For instance if the source
+     > code for a third party library is imported into the project it should not be modified arbitrarily.
+
+25. Code that interacts with third party code shall follow this coding standard.
+
+     > Third party code is likely to have its own conventions but this coding standard shall take precedence.
