@@ -75,9 +75,9 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 1. As an exception to the Allman style the contents of a namespace shall not be indented.
 
-    > Most of the code is likely to be part of one or two nested namespaces. Without this exception large parts of code would
+    > Most of the code is likely to be part of one or two nested namespaces. Without this exception large parts of the code would
     > be indented. This would actually make the code less readable as the deeper the level if indentation the harder it is for
-    > a developer to distinguish them.
+    > a developer to distinguish between them.
 
     Example:
     ```
