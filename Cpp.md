@@ -73,6 +73,27 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     > We consider this style to be the most readable and it is common in C++ code.
 
+1. As an exception to the Allman style the contents of a namespace shall not be indented.
+
+    > Most of the code is likely to be part of one or two nested namespaces. Without this exception large parts of code would
+    > be indented. This would actually make the code less readable as the deeper the level if indentation the harder for a
+    > a developer to distinguish them.
+
+    Example:
+    ```
+    namespace A
+    {
+    namespace B
+    {
+
+        class C
+        {
+        };
+
+    }
+    }
+    ```
+
 1. Curly braces shall not be omitted when they contain a single statement.
 
     Example:
@@ -90,9 +111,11 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
     > Omitting the braces leads to subtle errors and breaks consistency.
 
+1. 
+
 ## Naming conventions
 
-14. Namespace names shall use UpperCamelCase.
+16. Namespace names shall use UpperCamelCase.
 
     Examples:\
     *Pets*, *FourLeggedAnimals*
@@ -140,18 +163,18 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ### General
 
-22. The code shall comply with the C++ 11 standard.
+24. The code shall comply with the C++ 11 standard.
 
 ### Classes
 
-23. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
+25. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
     explicitly by the programmer) shall not be explicitly declared when the version provided by the compiler is adequate.
 
      > Explicitly declaring and defining special functions introduces more opportunities for mistakes since for instance adding
      > a member variable would mean that all the functions potentially need to be updated. Mandating the opposite (explicitly 
      > providing all the special functions) would also be a burden on the developer.
 
-23. If a special member function has to be explicitly declared but its definition is equivalent to the code that would be generated
+25. If a special member function has to be explicitly declared but its definition is equivalent to the code that would be generated
     by the compiler then the "= default" keyword shall be used.
 
     > A typical example would be when the generation of the default constructor is suppressed because a non-default constructor was
@@ -159,11 +182,11 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ## Third party code
 
-25. Third party code shall not be modified to comply with these coding conventions.
+27. Third party code shall not be modified to comply with these coding conventions.
 
      > If foreign code needs to be copied in the project it should be copied as-is as much as possible. For instance if the source
      > code for a third party library is imported into the project it should not be modified arbitrarily.
 
-25. Code that interacts with third party code shall follow this coding standard.
+27. Code that interacts with third party code shall follow this coding standard.
 
      > Third party code is likely to have its own conventions but this coding standard shall take precedence.
