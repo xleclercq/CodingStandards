@@ -130,9 +130,21 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     Function1(a, b)
     ```
 
+1. In template declarations the "template" keyword and the template parameters shall be put on a separate line.
+
+    Example:
+    ```
+    template<class T>
+    class MyClass
+    {
+    private:
+        T m_t;
+    };
+    ```
+
 ## Naming conventions
 
-16. Namespace names shall use UpperCamelCase.
+17. Namespace names shall use UpperCamelCase.
 
     Examples:\
     *Pets*, *FourLeggedAnimals*
@@ -180,30 +192,30 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
 
 ### General
 
-24. The code shall comply with the C++ 11 standard.
+25. The code shall comply with the C++ 11 standard.
 
 ### Classes
 
-25. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
+26. Special member functions (the functions which the compiler will automatically generate if they are used, but not declared
     explicitly by the programmer) shall not be explicitly declared when the version provided by the compiler is adequate.
 
-     > Explicitly declaring and defining special functions introduces more opportunities for mistakes since for instance adding
-     > a member variable would mean that all the functions potentially need to be updated. Mandating the opposite (explicitly 
-     > providing all the special functions) would also be a burden on the developer.
+    > Explicitly declaring and defining special functions introduces more opportunities for mistakes since for instance adding
+    > a member variable would mean that all the functions potentially need to be updated. Mandating the opposite (explicitly 
+    > providing all the special functions) would also be a burden on the developer.
 
-25. If a special member function has to be explicitly declared but its definition is equivalent to the code that would be generated
-    by the compiler then the "= default" keyword shall be used.
+1. If a special member function has to be explicitly declared but its definition is equivalent to the code that would be generated
+   by the compiler then the "= default" keyword shall be used.
 
     > A typical example would be when the generation of the default constructor is suppressed because a non-default constructor was
     > declared.
 
 ## Third party code
 
-27. Third party code shall not be modified to comply with these coding conventions.
+28. Third party code shall not be modified to comply with these coding conventions.
 
-     > If foreign code needs to be copied in the project it should be copied as-is as much as possible. For instance if the source
-     > code for a third party library is imported into the project it should not be modified arbitrarily.
+    > If foreign code needs to be copied in the project it should be copied as-is as much as possible. For instance if the source
+    > code for a third party library is imported into the project it should not be modified arbitrarily.
 
-27. Code that interacts with third party code shall follow this coding standard.
+1. Code that interacts with third party code shall follow this coding standard.
 
-     > Third party code is likely to have its own conventions but this coding standard shall take precedence.
+    > Third party code is likely to have its own conventions but this coding standard shall take precedence.
