@@ -86,9 +86,11 @@ This document describes C++ coding guidelines for projects in the [CodeSmithyIDE
     namespace B
     {
 
-        class C
-        {
-        };
+    class C
+    {
+    public:
+        C();
+    };
 
     }
     }
