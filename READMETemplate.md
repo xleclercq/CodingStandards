@@ -1,1 +1,1 @@
-# <organizatiom> - <project name>
+# \<organizatiom> - \<project name>
