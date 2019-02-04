@@ -1,6 +1,10 @@
 # \<Organization> - \<Project Name>
 
+## Overview
+
 An overview of what the project is about.
+
+## Contents
 
 # Project Status
 
