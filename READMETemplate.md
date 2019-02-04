@@ -1,10 +1,10 @@
 # \<Organization> - \<Project Name>
 
-## Overview
-
 An overview of what the project is about.
 
-## Contents
+# Contents
+
+A list of what is the repository.
 
 # Project Status
 
