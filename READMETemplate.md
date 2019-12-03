@@ -30,6 +30,6 @@ instructions.
 If the projects is based on work from another projects, credit these
 projects here. Contributors are not listed here.
 
-#s# License
+## License
 
 The license or a link to the license if the license is very long.
